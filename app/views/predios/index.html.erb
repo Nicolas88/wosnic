@@ -1,4 +1,4 @@
-<h1>Listing predios</h1>
+<h1>Listar predios</h1>
 
 <table class="table table-striped">
   <thead>
@@ -18,9 +18,9 @@
         <td><%= predio.telefono %></td>
         <td><%= predio.direccion %></td>
         <td><%= predio.cantidad_canchas %></td>
-        <td><%= link_to 'Show', predio %></td>
-        <td><%= link_to 'Edit', edit_predio_path(predio) %></td>
-        <td><%= link_to 'Destroy', predio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', predio %></td>
+        <td><%= link_to 'Editar', edit_predio_path(predio) %></td>
+        <td><%= link_to 'Eliminar', predio, method: :delete, data: { confirm: 'Estás seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Predio', new_predio_path %>
+<%= link_to 'Nuevo Predio', new_predio_path %>
