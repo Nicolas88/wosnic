@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_cancha: 1
+  horario: 2014-09-03 01:13:00
+
+two:
+  numero_cancha: 1
+  horario: 2014-09-03 01:13:00

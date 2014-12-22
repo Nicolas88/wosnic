@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero cancha:</strong>
+  <%= @cancha.numero_cancha %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @cancha.horario %>
+</p>
+
+<%= link_to 'Editar', edit_cancha_path(@cancha) %> |
+<%= link_to 'Atrás', canchas_path %>

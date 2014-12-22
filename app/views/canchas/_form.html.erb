@@ -1,0 +1,25 @@
+<%= form_for(@cancha) do |f| %>
+  <% if @cancha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cancha.errors.count, "error") %> prohibited this cancha from being saved:</h2>
+
+      <ul>
+      <% @cancha.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero_cancha %><br>
+    <%= f.number_field :numero_cancha %>
+  </div>
+  <div class="field">
+    <%= f.label :horario %><br>
+    <%= f.datetime_select :horario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
