@@ -14,9 +14,9 @@
       <tr>
         <td><%= cancha.numero_cancha %></td>
         <td><%= cancha.horario %></td>
-        <td><%= link_to 'Motrar', cancha %></td>
+        <td><%= link_to 'Mostrar', cancha %></td>
         <td><%= link_to 'Editar', edit_cancha_path(cancha) %></td>
-        <td><%= link_to 'quiero ELIMINAR ESTA PODONGA DE CANCHA', cancha, method: :delete, data: { confirm: 'Estás seguro?' } %></td>
+        <td><%= link_to 'Eliminar', cancha, method: :delete, data: { confirm: 'Estás seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
