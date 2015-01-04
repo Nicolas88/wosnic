@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140903041226) do
+ActiveRecord::Schema.define(version: 20140903041300) do
+
+  create_table "canchas", force: true do |t|
+    t.integer  "numero_cancha"
+    t.datetime "horario"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "predios", force: true do |t|
     t.string   "nombre"
